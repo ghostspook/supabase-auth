@@ -1,4 +1,6 @@
 import { createRouter, createWebHistory } from 'vue-router';
+import { supabase } from "../supabase";
+
 function loadPage(view) {
   return () =>
     import(
@@ -32,7 +34,7 @@ const router = createRouter({
 
 router.beforeEach((to, from, next) => {
   // get current user info
-  const currentUser = supabase.auth.user();
+  const currentUser = supabase.auth.getUser();
   const requiresAuth = to.matched.some
   (record => record.meta.requiresAuth);
 
