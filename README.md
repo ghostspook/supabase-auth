@@ -1,19 +1,5 @@
 # supabase-auth
 
-## Project setup
-```
-npm install
-```
+Based on [this tutorial](https://blog.logrocket.com/ultimate-guide-authentication-vue-js-supabase/)
 
-### Compiles and hot-reloads for development
-```
-npm run serve
-```
-
-### Compiles and minifies for production
-```
-npm run build
-```
-
-### Customize configuration
-See [Configuration Reference](https://cli.vuejs.org/config/).
+It doesn't seem work as of 20-11-2022.
